@@ -8,7 +8,7 @@
 import UIKit
 import SwiftBasicTool
 
-class ViewController: UIViewController {
+class ViewController: BaseViewController {
     
     let ImageQueue = DispatchQueue(label: "ImageQueue", qos: .userInteractive)
 
@@ -17,47 +17,35 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        statusBarStyle = .hidden
+        view.backgroundColor = UIColor.white
         
-        imageView.frame = SafeArea.screenBounds
-        view.addSubview(imageView)
+        let topView = UIView(frame: CGRect(x: 0, y: 0, width: SafeArea.screenWidth, height: SafeArea.top))
+        topView.backgroundColor = UIColor.systemRed
+        view.addSubview(topView)
         
         let button = UIButton(frame: CGRect(x: 100, y: 100, width: 50, height: 50))
         button.addTarget(self, action: #selector(self.click), for: .touchUpInside)
         button.backgroundColor = UIColor.systemRed
         view.addSubview(button)
         
-        let testB = UIButton(frame: CGRect(x: 100, y: 200, width: 50, height: 50))
-        testB.addTarget(self, action: #selector(self.cli), for: .touchUpInside)
-        testB.backgroundColor = UIColor.systemRed
-        view.addSubview(testB)
+//
+//        let testB = UIButton(frame: CGRect(x: 100, y: 200, width: 50, height: 50))
+//        testB.addTarget(self, action: #selector(self.cli), for: .touchUpInside)
+//        testB.backgroundColor = UIColor.systemRed
+//        view.addSubview(testB)
     }
 
     @objc
     func click() {
-        DispatchQueue.global(qos: .background).async {
-            var image: UIImage?
-            self.ImageQueue.async {
-                image = self.fetchImage()
-            }
-            self.ImageQueue.sync {
-                DispatchQueue.main.async {
-                    self.imageView.image = image
-                }
-            }
-        }
+        let controller = UIViewController()
+        controller.view.backgroundColor = UIColor.white
+        self.navigationController?.pushViewController(controller, animated: true)
     }
     
     @objc
     func cli() {
-        print("action")
-    }
-    
-    func fetchImage() -> UIImage? {
-        if let url = URL(string: "https://w.wallhaven.cc/full/pk/wallhaven-pkgkkp.png"),
-            let data = try? Data(contentsOf: url) {
-            return UIImage(data: data)
-        }
-        return nil
+        
     }
 
 }

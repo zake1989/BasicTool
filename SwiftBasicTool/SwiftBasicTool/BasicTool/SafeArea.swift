@@ -8,12 +8,6 @@
 
 import UIKit
 
-public enum VibrationType {
-    case audioPlay
-    case impactFeedback
-    case none
-}
-
 public struct SafeArea {
     
     private static let shared = SafeArea()
@@ -24,10 +18,10 @@ public struct SafeArea {
     private let tabBarFrame: CGRect
     
 
-    private init(){
-        let window = UIWindow()
-        self.windowFrame = window.frame
-        self.safeAreaInsets = window.safeAreaInsets
+    private init() {
+        let window = UIApplication.shared.kWindow
+        self.windowFrame = window?.frame ?? .zero
+        self.safeAreaInsets = window?.safeAreaInsets ?? .zero
         
         self.navigationBarFrame = UINavigationController().navigationBar.frame
         self.tabBarFrame = UITabBarController().tabBar.frame

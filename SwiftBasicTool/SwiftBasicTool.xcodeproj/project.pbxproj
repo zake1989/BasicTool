@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AE3D60A027B4F1B000368258 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3D609F27B4F1B000368258 /* BaseViewController.swift */; };
+		AE3D60A227B5127D00368258 /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3D60A127B5127D00368258 /* BaseNavigationViewController.swift */; };
 		AE94BC552799350F00C59DE1 /* SwiftBasicTool.h in Headers */ = {isa = PBXBuildFile; fileRef = AE94BC542799350F00C59DE1 /* SwiftBasicTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AE94BC8C2799383400C59DE1 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE94BC8B2799383400C59DE1 /* AsyncOperation.swift */; };
 		AE94BC8F2799387A00C59DE1 /* GCDUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE94BC8D2799387A00C59DE1 /* GCDUtils.swift */; };
@@ -18,9 +20,12 @@
 		AE94BC9C2799429700C59DE1 /* UIColor+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE94BC9B2799429700C59DE1 /* UIColor+.swift */; };
 		AE94BC9E2799442C00C59DE1 /* AudioSessionHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE94BC9D2799442C00C59DE1 /* AudioSessionHelper.swift */; };
 		AE94BCA027994A8B00C59DE1 /* AuthorizeUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE94BC9F27994A8B00C59DE1 /* AuthorizeUtils.swift */; };
+		AEBFB42727B3C02E00CA2AD8 /* UIApplication+.swift in Sources */ = {isa = PBXBuildFile; fileRef = AEBFB42627B3C02E00CA2AD8 /* UIApplication+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AE3D609F27B4F1B000368258 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		AE3D60A127B5127D00368258 /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
 		AE94BC512799350F00C59DE1 /* SwiftBasicTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftBasicTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE94BC542799350F00C59DE1 /* SwiftBasicTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftBasicTool.h; sourceTree = "<group>"; };
 		AE94BC8B2799383400C59DE1 /* AsyncOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
@@ -33,6 +38,7 @@
 		AE94BC9B2799429700C59DE1 /* UIColor+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+.swift"; sourceTree = "<group>"; };
 		AE94BC9D2799442C00C59DE1 /* AudioSessionHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioSessionHelper.swift; sourceTree = "<group>"; };
 		AE94BC9F27994A8B00C59DE1 /* AuthorizeUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthorizeUtils.swift; sourceTree = "<group>"; };
+		AEBFB42627B3C02E00CA2AD8 /* UIApplication+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,7 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				AE94BC542799350F00C59DE1 /* SwiftBasicTool.h */,
-				AE94BC862799365D00C59DE1 /* BasicExttension */,
+				AE94BC862799365D00C59DE1 /* BasicExtension */,
 				AE94BC852799365200C59DE1 /* BasicTool */,
 			);
 			path = SwiftBasicTool;
@@ -82,18 +88,21 @@
 				AE94BC952799409C00C59DE1 /* SafeArea.swift */,
 				AE94BC8E2799387A00C59DE1 /* GCDTimer.swift */,
 				AE94BC8D2799387A00C59DE1 /* GCDUtils.swift */,
+				AE3D609F27B4F1B000368258 /* BaseViewController.swift */,
+				AE3D60A127B5127D00368258 /* BaseNavigationViewController.swift */,
 			);
 			path = BasicTool;
 			sourceTree = "<group>";
 		};
-		AE94BC862799365D00C59DE1 /* BasicExttension */ = {
+		AE94BC862799365D00C59DE1 /* BasicExtension */ = {
 			isa = PBXGroup;
 			children = (
 				AE94BC992799421200C59DE1 /* Collection+.swift */,
 				AE94BC9B2799429700C59DE1 /* UIColor+.swift */,
+				AEBFB42627B3C02E00CA2AD8 /* UIApplication+.swift */,
 				AE94BC932799409200C59DE1 /* NSTimer+WeakTarget.swift */,
 			);
-			path = BasicExttension;
+			path = BasicExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,14 +185,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE3D60A227B5127D00368258 /* BaseNavigationViewController.swift in Sources */,
 				AE94BC9E2799442C00C59DE1 /* AudioSessionHelper.swift in Sources */,
 				AE94BC8F2799387A00C59DE1 /* GCDUtils.swift in Sources */,
 				AE94BC9C2799429700C59DE1 /* UIColor+.swift in Sources */,
 				AE94BC962799409C00C59DE1 /* SafeArea.swift in Sources */,
 				AE94BC942799409200C59DE1 /* NSTimer+WeakTarget.swift in Sources */,
+				AE3D60A027B4F1B000368258 /* BaseViewController.swift in Sources */,
 				AE94BC9227993E7F00C59DE1 /* SynchronizedArray.swift in Sources */,
 				AE94BC902799387A00C59DE1 /* GCDTimer.swift in Sources */,
 				AE94BC9A2799421200C59DE1 /* Collection+.swift in Sources */,
+				AEBFB42727B3C02E00CA2AD8 /* UIApplication+.swift in Sources */,
 				AE94BC8C2799383400C59DE1 /* AsyncOperation.swift in Sources */,
 				AE94BCA027994A8B00C59DE1 /* AuthorizeUtils.swift in Sources */,
 			);
