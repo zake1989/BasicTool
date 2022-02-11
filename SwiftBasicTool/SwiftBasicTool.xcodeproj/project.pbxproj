@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AE3D60A027B4F1B000368258 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3D609F27B4F1B000368258 /* BaseViewController.swift */; };
 		AE3D60A227B5127D00368258 /* BaseNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE3D60A127B5127D00368258 /* BaseNavigationViewController.swift */; };
+		AE4C425827B6102E004E33FE /* BaseNavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE4C425727B6102E004E33FE /* BaseNavigationBar.swift */; };
 		AE94BC552799350F00C59DE1 /* SwiftBasicTool.h in Headers */ = {isa = PBXBuildFile; fileRef = AE94BC542799350F00C59DE1 /* SwiftBasicTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AE94BC8C2799383400C59DE1 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE94BC8B2799383400C59DE1 /* AsyncOperation.swift */; };
 		AE94BC8F2799387A00C59DE1 /* GCDUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE94BC8D2799387A00C59DE1 /* GCDUtils.swift */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		AE3D609F27B4F1B000368258 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		AE3D60A127B5127D00368258 /* BaseNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationViewController.swift; sourceTree = "<group>"; };
+		AE4C425727B6102E004E33FE /* BaseNavigationBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationBar.swift; sourceTree = "<group>"; };
 		AE94BC512799350F00C59DE1 /* SwiftBasicTool.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftBasicTool.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE94BC542799350F00C59DE1 /* SwiftBasicTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftBasicTool.h; sourceTree = "<group>"; };
 		AE94BC8B2799383400C59DE1 /* AsyncOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				AE94BC8D2799387A00C59DE1 /* GCDUtils.swift */,
 				AE3D609F27B4F1B000368258 /* BaseViewController.swift */,
 				AE3D60A127B5127D00368258 /* BaseNavigationViewController.swift */,
+				AE4C425727B6102E004E33FE /* BaseNavigationBar.swift */,
 			);
 			path = BasicTool;
 			sourceTree = "<group>";
@@ -191,6 +194,7 @@
 				AE94BC9C2799429700C59DE1 /* UIColor+.swift in Sources */,
 				AE94BC962799409C00C59DE1 /* SafeArea.swift in Sources */,
 				AE94BC942799409200C59DE1 /* NSTimer+WeakTarget.swift in Sources */,
+				AE4C425827B6102E004E33FE /* BaseNavigationBar.swift in Sources */,
 				AE3D60A027B4F1B000368258 /* BaseViewController.swift in Sources */,
 				AE94BC9227993E7F00C59DE1 /* SynchronizedArray.swift in Sources */,
 				AE94BC902799387A00C59DE1 /* GCDTimer.swift in Sources */,

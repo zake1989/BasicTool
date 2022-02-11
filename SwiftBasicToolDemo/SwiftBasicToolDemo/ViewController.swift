@@ -18,7 +18,7 @@ class ViewController: BaseViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         statusBarStyle = .hidden
-        view.backgroundColor = UIColor.white
+        view.backgroundColor = UIColor.yellow
         
         let topView = UIView(frame: CGRect(x: 0, y: 0, width: SafeArea.screenWidth, height: SafeArea.top))
         topView.backgroundColor = UIColor.systemRed
@@ -39,7 +39,7 @@ class ViewController: BaseViewController {
     @objc
     func click() {
         let controller = UIViewController()
-        controller.view.backgroundColor = UIColor.white
+        controller.view.backgroundColor = UIColor.systemBlue
         self.navigationController?.pushViewController(controller, animated: true)
     }
     

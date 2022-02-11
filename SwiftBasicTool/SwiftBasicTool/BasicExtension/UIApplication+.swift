@@ -30,4 +30,15 @@ extension UIApplication {
         }
     }
     
+    var statusBarHeight: CGFloat {
+        if #available(iOS 13.0, *) {
+            guard let manager = UIApplication.shared.windows.first(where: \.isKeyWindow)?.windowScene?.statusBarManager else {
+                return 0.0
+            }
+            return manager.statusBarFrame.height
+        } else {
+            return UIApplication.shared.statusBarFrame.height
+        }
+    }
+    
 }

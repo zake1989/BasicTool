@@ -49,9 +49,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     class func setupWindow(window: UIWindow?) {
         window?.makeKey()
+        
+        let nv = BaseNavigationViewController(navigationBarClass: BaseNavigationBar.self, toolbarClass: nil)
+        nv.setViewControllers([ViewController()], animated: false)
 //        UINavigationController(rootViewController: ViewController())
 //        ViewController()
-        window?.rootViewController = BaseNavigationViewController(rootViewController: ViewController())
+        window?.rootViewController = nv
         window?.makeKeyAndVisible()
     }
 }

@@ -47,7 +47,7 @@ open class BaseViewController: UIViewController {
     }
     
     open override var preferredStatusBarUpdateAnimation: UIStatusBarAnimation {
-        return .slide
+        return .fade
     }
     
 }
